@@ -40,7 +40,7 @@ private:
 	virtual void ioBlockedSignal ();
 };
 
-class ioBlockedList : private tsDLList<ioBlocked> {
+class ioBlockedList : protected tsDLList<ioBlocked> {
 friend class ioBlocked;
 public:
 	ioBlockedList ();
